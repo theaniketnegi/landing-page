@@ -5,6 +5,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family:Roboto;
+    overflow: auto;
+}
+html{
+    height: 100vh;
 }
 header h2{
     font-size:24px;
@@ -54,14 +58,20 @@ h1{
 .head-button{
     padding: 0.5em 2em;
     background-color: #3882F6;
-    color:white;
+    color:#F9FAF8;
     font-size:1em;
     font-weight: 900;
     border-radius: 5px;
     border: none;
     margin-top: 1.5em;
 }
-
+.head-button:hover{
+    background-color: #F9FAF8;
+    color:#3882F6;
+}
+.head-button:active{
+    background-color: #e7e7e6;
+}
 .head-img{
     width: 500px;
     height: auto;
@@ -91,6 +101,7 @@ a{
     align-items: center;
     gap: 60px;
 }
+
 .item{
     border: 3px solid #3882F6;
     border-radius: 20px; 
@@ -111,4 +122,74 @@ a{
     margin-top: 0.25em;
     font-size: 1rem;
     text-align: center;
+}
+
+.second-section{
+    background-color: #E5E7EB;
+}
+.second-section-container{
+    display:flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 7em 0;
+}
+.second-section p{
+    font-size:36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+.second-section h2{
+    margin-top: .5em;
+    align-self: flex-end;
+}
+.third-section{ 
+    margin: 5em 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.poster{
+    background-color: #3882F6;
+    display: flex;
+    padding: 2.5em 1em;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    border-radius: 8px;
+}
+
+.poster  h2, .poster  p{
+    color: #E5E7EB;
+}
+
+.poster button{
+    border: 3px solid #E5E7EB;
+    background-color: transparent;
+    color: #E5E7EB;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1em 2em;   
+}
+
+.poster button:hover{
+    color: #3882F6;
+    background-color: #E5E7EB;
+}
+.poster button:active{
+    color: #3882F6;
+    background-color: #d4d6db;
+    border-color: #d4d6db;
+}
+footer{
+    background-color: #1F2937;
+    text-align: center;
+}
+footer p{
+    color:#E5E7EB;
+    margin-top: 2em;
+    margin-bottom: 2.5em;
 }
